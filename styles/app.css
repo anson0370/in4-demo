@@ -5,7 +5,7 @@
   background: url(/images/icons.png) 0px 0px no-repeat;
 }
 
-/* line 17, app/styles/app.scss */
+/* line 4, app/styles/app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -19,37 +19,266 @@ body {
   font-size: 16px;
 }
 
-/* line 30, app/styles/app.scss */
+/* line 17, app/styles/app.scss */
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-/* line 34, app/styles/app.scss */
+/* line 22, app/styles/app.scss */
 ul, ol {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 40, app/styles/app.scss */
+/* line 28, app/styles/app.scss */
 .left {
   float: left;
 }
 
-/* line 44, app/styles/app.scss */
+/* line 32, app/styles/app.scss */
 .right {
   float: right;
 }
 
-/* line 48, app/styles/app.scss */
-.header {
+/* line 36, app/styles/app.scss */
+ul.nav {
+  display: block;
+}
+/* line 39, app/styles/app.scss */
+ul.nav > li {
+  display: inline-block;
+}
+
+/* line 44, app/styles/app.scss */
+button, .btn {
+  display: inline-block;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 13px 30px;
+  cursor: pointer;
+}
+/* line 53, app/styles/app.scss */
+button.btn-big, .btn.btn-big {
+  font-size: 18px;
+}
+/* line 56, app/styles/app.scss */
+button.btn-large, .btn.btn-large {
+  font-size: 32px;
+  padding: 17px 45px;
+}
+/* line 60, app/styles/app.scss */
+button.btn-round, .btn.btn-round {
+  border-radius: 1000px;
+}
+/* line 63, app/styles/app.scss */
+button.btn-primary, .btn.btn-primary {
+  color: white;
+  background-color: #0a5ca9;
+  font-weight: bold;
+}
+/* line 68, app/styles/app.scss */
+button.btn-border, .btn.btn-border {
+  border: 2px solid white;
+  color: white;
+}
+/* line 72, app/styles/app.scss */
+button.btn-border:hover, .btn.btn-border:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 78, app/styles/app.scss */
+.progress {
+  display: block;
+  height: 8px;
+  width: 100%;
+  border-radius: 1000px;
+  background-color: #d9d9de;
+}
+/* line 85, app/styles/app.scss */
+.progress > span {
+  display: block;
+  height: 8px;
+  border-radius: 1000px;
+  background-color: #00a0ff;
+}
+/* line 92, app/styles/app.scss */
+.progress.progress-border {
+  height: 6px;
+  border: 1px solid white;
+  position: relative;
+  background-color: transparent;
+}
+/* line 98, app/styles/app.scss */
+.progress.progress-border > span {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  background-color: white;
+}
+
+/* line 108, app/styles/app.scss */
+.progress-group .progress-info {
+  display: block;
+}
+/* line 111, app/styles/app.scss */
+.progress-group .progress-info > li {
+  display: inline-block;
+  line-height: 2em;
+  font-weight: bold;
+  margin-right: 20px;
+}
+/* line 117, app/styles/app.scss */
+.progress-group .progress-info > li > span {
+  opacity: 0.7;
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+/* line 127, app/styles/app.scss */
+.container-10 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 131, app/styles/app.scss */
+.container-12 {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* line 4, app/styles/detail.scss */
+.content .item-primary-info-background {
   position: absolute;
   width: 100%;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.9);
+  height: 450px;
+  background-color: #f7fafa;
   border-bottom: 1px solid #d9d9de;
 }
-/* line 55, app/styles/app.scss */
+/* line 13, app/styles/detail.scss */
+.content .item .primary-info {
+  position: relative;
+  padding: 60px 0 40px;
+  border-bottom: 1px solid #d9d9de;
+}
+/* line 19, app/styles/detail.scss */
+.content .item .primary-info .primary-image {
+  /* border: 1px solid $border-color; */
+  width: 600px;
+  height: 500px;
+  border-radius: 2px;
+  background-position: 50% 50%;
+  background-size: auto 100%;
+}
+/* line 29, app/styles/detail.scss */
+.content .item .primary-info .tags {
+  color: #828587;
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+/* line 35, app/styles/detail.scss */
+.content .item .primary-info .tags > li {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 41, app/styles/detail.scss */
+.content .item .primary-info > p {
+  width: 600px;
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+/* line 49, app/styles/detail.scss */
+.content .item .primary-info .primary-right {
+  width: 360px;
+}
+/* line 52, app/styles/detail.scss */
+.content .item .primary-info .primary-right > h1 {
+  margin: 0;
+  font-size: 48px;
+}
+/* line 57, app/styles/detail.scss */
+.content .item .primary-info .primary-right > ul {
+  margin-top: 40px;
+  height: 330px;
+}
+/* line 61, app/styles/detail.scss */
+.content .item .primary-info .primary-right > ul > li {
+  margin: 20px 0;
+  font-size: 48px;
+  font-weight: bold;
+}
+/* line 66, app/styles/detail.scss */
+.content .item .primary-info .primary-right > ul > li > span {
+  display: block;
+  color: #828587;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 75, app/styles/detail.scss */
+.content .item .primary-info .primary-right .author {
+  margin-top: 40px;
+}
+/* line 78, app/styles/detail.scss */
+.content .item .primary-info .primary-right .author > h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* line 82, app/styles/detail.scss */
+.content .item .primary-info .primary-right .author > span {
+  display: block;
+  color: #828587;
+  font-size: 14px;
+  margin: 5px 0;
+}
+/* line 88, app/styles/detail.scss */
+.content .item .primary-info .primary-right .author > a {
+  color: #00a0ff;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 60px;
+  font-weight: bold;
+}
+/* line 95, app/styles/detail.scss */
+.content .item .primary-info .primary-right .author > .author-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: 100% 100%;
+}
+/* line 106, app/styles/detail.scss */
+.content .detail {
+  height: 800px;
+}
+/* line 110, app/styles/detail.scss */
+.content .detail .tabs > li {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 40px;
+  padding: 30px 0;
+}
+/* line 116, app/styles/detail.scss */
+.content .detail .tabs > li.selected {
+  border-bottom: 4px solid #0a5ca9;
+}
+/* line 4, app/styles/index.scss */
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #d9d9de;
+}
+/* line 5, app/styles/index.scss */
+.header.absolute {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 15, app/styles/index.scss */
 .header h1.site-logo {
   display: block;
   margin: 0;
@@ -58,45 +287,45 @@ ul, ol {
   font-size: 24px;
   font-weight: normal;
 }
-/* line 63, app/styles/app.scss */
+/* line 23, app/styles/index.scss */
 .header h1.site-logo .haier {
   color: #0a5ca9;
 }
-/* line 66, app/styles/app.scss */
+/* line 26, app/styles/index.scss */
 .header h1.site-logo .diy {
   font-weight: bold;
   color: #00a0ff;
 }
-/* line 72, app/styles/app.scss */
+/* line 32, app/styles/index.scss */
 .header .user-nav {
   padding-left: 20px;
   margin-right: 40px;
   /* border-left: 1px solid $border-color; */
 }
-/* line 77, app/styles/app.scss */
+/* line 37, app/styles/index.scss */
 .header .user-nav > li > a {
   display: block;
   padding: 20px 15px;
   line-height: 20px;
   color: #00a0ff;
 }
-/* line 83, app/styles/app.scss */
+/* line 43, app/styles/index.scss */
 .header .user-nav > li > a:hover {
   color: #828587;
   background-color: #f7fafa;
 }
-/* line 90, app/styles/app.scss */
+/* line 50, app/styles/index.scss */
 .header .search {
   display: inline-block;
   padding: 20px 40px;
   line-height: 20px;
 }
-/* line 95, app/styles/app.scss */
+/* line 55, app/styles/index.scss */
 .header .search > i {
   margin-right: 20px;
   color: #828587;
 }
-/* line 100, app/styles/app.scss */
+/* line 60, app/styles/index.scss */
 .header .search > input {
   border: none;
   width: 720px;
@@ -105,11 +334,11 @@ ul, ol {
   font-weight: bold;
   background: none;
 }
-/* line 110, app/styles/app.scss */
+/* line 70, app/styles/index.scss */
 .header .border-left {
   position: relative;
 }
-/* line 113, app/styles/app.scss */
+/* line 73, app/styles/index.scss */
 .header .border-left::before {
   display: block;
   content: "";
@@ -120,15 +349,14 @@ ul, ol {
   border-left: 1px solid #828587;
 }
 
-/* line 126, app/styles/app.scss */
+/* line 86, app/styles/index.scss */
 .content .important-things {
   width: 100%;
   height: 600px;
-  background-image: url(http://img.ivsky.com/img/tupian/pic/201401/09/dianhuating-007.jpg);
   background-position: 50% 50%;
   background-size: 100% auto;
 }
-/* line 133, app/styles/app.scss */
+/* line 92, app/styles/index.scss */
 .content .important-things > .info {
   position: absolute;
   width: 450px;
@@ -137,19 +365,19 @@ ul, ol {
   margin-left: -500px;
   color: white;
 }
-/* line 141, app/styles/app.scss */
+/* line 100, app/styles/index.scss */
 .content .important-things > .info > h1 {
   font-size: 48px;
 }
-/* line 144, app/styles/app.scss */
+/* line 103, app/styles/index.scss */
 .content .important-things > .info > p {
   font-size: 20px;
 }
-/* line 147, app/styles/app.scss */
-.content .important-things > .info > button {
+/* line 106, app/styles/index.scss */
+.content .important-things > .info > a {
   margin-top: 40px;
 }
-/* line 153, app/styles/app.scss */
+/* line 112, app/styles/index.scss */
 .content .picks-staff {
   background-color: #f7fafa;
   padding: 60px 0;
@@ -157,21 +385,21 @@ ul, ol {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 160, app/styles/app.scss */
+/* line 119, app/styles/index.scss */
 .content .picks-staff .title > a {
   float: right;
   color: #828587;
   font-size: 13px;
   margin-top: 4px;
 }
-/* line 166, app/styles/app.scss */
+/* line 125, app/styles/index.scss */
 .content .picks-staff .title > h2 {
   margin: 0;
   padding-left: 20px;
   margin-bottom: 30px;
   font-size: 18px;
 }
-/* line 174, app/styles/app.scss */
+/* line 133, app/styles/index.scss */
 .content .picks-staff .categories {
   float: left;
   width: 100px;
@@ -179,18 +407,18 @@ ul, ol {
   padding-right: 20px;
   border-right: 1px solid #d9d9de;
 }
-/* line 181, app/styles/app.scss */
+/* line 140, app/styles/index.scss */
 .content .picks-staff .categories > li {
   font-size: 13px;
   padding: 5px 0;
   position: relative;
   cursor: pointer;
 }
-/* line 187, app/styles/app.scss */
+/* line 146, app/styles/index.scss */
 .content .picks-staff .categories > li.selected {
   color: #00a0ff;
 }
-/* line 190, app/styles/app.scss */
+/* line 149, app/styles/index.scss */
 .content .picks-staff .categories > li.selected::after {
   position: absolute;
   content: "";
@@ -200,18 +428,18 @@ ul, ol {
   width: 3px;
   background-color: #00a0ff;
 }
-/* line 203, app/styles/app.scss */
+/* line 162, app/styles/index.scss */
 .content .picks-staff .staffs {
   float: right;
 }
-/* line 206, app/styles/app.scss */
+/* line 165, app/styles/index.scss */
 .content .picks-staff .staffs .staff {
   display: inline-block;
   width: 416px;
   margin-left: 20px;
   cursor: pointer;
 }
-/* line 212, app/styles/app.scss */
+/* line 171, app/styles/index.scss */
 .content .picks-staff .staffs .staff .image {
   border-radius: 5px 5px 0 0;
   height: 200px;
@@ -219,7 +447,7 @@ ul, ol {
   background-size: 100% auto;
   position: relative;
 }
-/* line 219, app/styles/app.scss */
+/* line 178, app/styles/index.scss */
 .content .picks-staff .staffs .staff .image > .author {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.5);
@@ -231,7 +459,7 @@ ul, ol {
   left: 0;
   bottom: 0;
 }
-/* line 234, app/styles/app.scss */
+/* line 193, app/styles/index.scss */
 .content .picks-staff .staffs .staff .infos {
   border-radius: 0 0 5px 5px;
   border-left: 1px solid #d9d9de;
@@ -240,40 +468,40 @@ ul, ol {
   padding: 10px;
   font-size: 14px;
 }
-/* line 244, app/styles/app.scss */
+/* line 203, app/styles/index.scss */
 .content .picks-staff .staffs .staff .infos > h3 {
   margin: 0;
 }
-/* line 247, app/styles/app.scss */
+/* line 206, app/styles/index.scss */
 .content .picks-staff .staffs .staff .infos > p {
   color: #828587;
   height: 80px;
 }
-/* line 256, app/styles/app.scss */
+/* line 215, app/styles/index.scss */
 .content .create {
   padding: 60px 0;
 }
-/* line 259, app/styles/app.scss */
+/* line 218, app/styles/index.scss */
 .content .create > h1 {
   margin: 0;
   text-align: center;
   color: #828587;
 }
-/* line 265, app/styles/app.scss */
+/* line 224, app/styles/index.scss */
 .content .create .create-options {
   margin-top: 60px;
   text-align: center;
   color: #828587;
 }
-/* line 270, app/styles/app.scss */
+/* line 229, app/styles/index.scss */
 .content .create .create-options a.option {
   color: #828587;
 }
-/* line 273, app/styles/app.scss */
+/* line 232, app/styles/index.scss */
 .content .create .create-options a.option:hover {
   background-color: #f7fafa;
 }
-/* line 278, app/styles/app.scss */
+/* line 237, app/styles/index.scss */
 .content .create .create-options .option {
   display: inline-block;
   padding: 20px 50px;
@@ -281,21 +509,21 @@ ul, ol {
   font-size: 32px;
   vertical-align: middle;
 }
-/* line 285, app/styles/app.scss */
+/* line 244, app/styles/index.scss */
 .content .create .create-options .option > i {
   display: block;
   font-size: 96px;
   margin-bottom: 20px;
 }
-/* line 290, app/styles/app.scss */
+/* line 249, app/styles/index.scss */
 .content .create .create-options .option > i.fa-flask {
   color: #00a0ff;
 }
-/* line 293, app/styles/app.scss */
+/* line 252, app/styles/index.scss */
 .content .create .create-options .option > i.fa-gears {
   color: #0a5ca9;
 }
-/* line 298, app/styles/app.scss */
+/* line 257, app/styles/index.scss */
 .content .create .create-options .or {
   display: inline-block;
   position: relative;
@@ -303,7 +531,7 @@ ul, ol {
   font-size: 24px;
   vertical-align: middle;
 }
-/* line 305, app/styles/app.scss */
+/* line 264, app/styles/index.scss */
 .content .create .create-options .or::before, .content .create .create-options .or::after {
   position: absolute;
   display: block;
@@ -312,26 +540,26 @@ ul, ol {
   left: 50%;
   border-left: 1px solid #d9d9de;
 }
-/* line 313, app/styles/app.scss */
+/* line 272, app/styles/index.scss */
 .content .create .create-options .or::before {
   top: 30px;
 }
-/* line 316, app/styles/app.scss */
+/* line 275, app/styles/index.scss */
 .content .create .create-options .or::after {
   bottom: 30px;
 }
-/* line 320, app/styles/app.scss */
+/* line 279, app/styles/index.scss */
 .content .create .create-options .options {
   display: inline-block;
   width: 490px;
   text-align: left;
   vertical-align: middle;
 }
-/* line 326, app/styles/app.scss */
+/* line 285, app/styles/index.scss */
 .content .create .create-options .options > li {
   display: inline-block;
 }
-/* line 329, app/styles/app.scss */
+/* line 288, app/styles/index.scss */
 .content .create .create-options .options > li > a {
   text-align: center;
   color: #828587;
@@ -343,147 +571,43 @@ ul, ol {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 340, app/styles/app.scss */
+/* line 299, app/styles/index.scss */
 .content .create .create-options .options > li > a:hover {
   color: #0f2105;
 }
 
-/* line 350, app/styles/app.scss */
+/* line 309, app/styles/index.scss */
 .footer {
   padding: 60px 0;
   background-color: #03203a;
   color: white;
   font-size: 14px;
 }
-/* line 356, app/styles/app.scss */
+/* line 315, app/styles/index.scss */
 .footer .about {
   display: inline-block;
   margin-right: 80px;
 }
-/* line 360, app/styles/app.scss */
+/* line 319, app/styles/index.scss */
 .footer .about > h3 {
   margin: 0;
 }
-/* line 363, app/styles/app.scss */
+/* line 322, app/styles/index.scss */
 .footer .about > ul {
   margin-top: 20px;
 }
-/* line 366, app/styles/app.scss */
+/* line 325, app/styles/index.scss */
 .footer .about > ul > li {
   margin: 10px 0;
   color: #828587;
   cursor: pointer;
 }
-/* line 374, app/styles/app.scss */
+/* line 333, app/styles/index.scss */
 .footer .copyright {
   color: #828587;
   text-align: right;
 }
-/* line 378, app/styles/app.scss */
+/* line 337, app/styles/index.scss */
 .footer .copyright .logo {
   font-size: 24px;
-}
-
-/* line 385, app/styles/app.scss */
-ul.nav {
-  display: block;
-}
-/* line 388, app/styles/app.scss */
-ul.nav > li {
-  display: inline-block;
-}
-
-/* line 393, app/styles/app.scss */
-button, .btn {
-  border-radius: 5px;
-  background: none;
-  border: none;
-  font-size: 16px;
-  padding: 13px 30px;
-  cursor: pointer;
-}
-/* line 401, app/styles/app.scss */
-button.btn-big, .btn.btn-big {
-  font-size: 18px;
-}
-/* line 404, app/styles/app.scss */
-button.btn-round, .btn.btn-round {
-  border-radius: 1000px;
-}
-/* line 407, app/styles/app.scss */
-button.btn-primary, .btn.btn-primary {
-  color: white;
-  background-color: #00a0ff;
-  border-color: #00a0ff;
-  font-weight: bold;
-}
-/* line 413, app/styles/app.scss */
-button.btn-border, .btn.btn-border {
-  border: 2px solid white;
-  color: white;
-}
-/* line 417, app/styles/app.scss */
-button.btn-border:hover, .btn.btn-border:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* line 423, app/styles/app.scss */
-.progress {
-  display: block;
-  height: 8px;
-  width: 100%;
-  border-radius: 1000px;
-  background-color: #d9d9de;
-}
-/* line 430, app/styles/app.scss */
-.progress > span {
-  display: block;
-  height: 8px;
-  border-radius: 1000px;
-  background-color: #00a0ff;
-}
-/* line 437, app/styles/app.scss */
-.progress.progress-border {
-  height: 6px;
-  border: 1px solid white;
-  position: relative;
-  background-color: transparent;
-}
-/* line 443, app/styles/app.scss */
-.progress.progress-border > span {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  background-color: white;
-}
-
-/* line 453, app/styles/app.scss */
-.progress-group .progress-info {
-  display: block;
-}
-/* line 456, app/styles/app.scss */
-.progress-group .progress-info > li {
-  display: inline-block;
-  line-height: 2em;
-  font-weight: bold;
-  margin-right: 20px;
-}
-/* line 462, app/styles/app.scss */
-.progress-group .progress-info > li > span {
-  opacity: 0.7;
-  margin-right: 5px;
-  font-weight: normal;
-  font-size: 12px;
-}
-
-/* line 472, app/styles/app.scss */
-.container-10 {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-/* line 476, app/styles/app.scss */
-.container-12 {
-  width: 1200px;
-  margin: 0 auto;
 }
