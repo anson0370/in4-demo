@@ -150,7 +150,52 @@ button.btn-border:hover, .btn.btn-border:hover {
   width: 1200px;
   margin: 0 auto;
 }
-/* line 4, app/styles/detail.scss */
+
+/* line 136, app/styles/app.scss */
+.staff {
+  display: block;
+  width: 416px;
+  cursor: pointer;
+}
+/* line 141, app/styles/app.scss */
+.staff .image {
+  border-radius: 5px 5px 0 0;
+  height: 200px;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  position: relative;
+}
+/* line 148, app/styles/app.scss */
+.staff .image > .author {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 5px 0 0;
+  padding: 3px 10px;
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* line 163, app/styles/app.scss */
+.staff .infos {
+  border-radius: 0 0 5px 5px;
+  border-left: 1px solid #d9d9de;
+  border-right: 1px solid #d9d9de;
+  border-bottom: 1px solid #d9d9de;
+  padding: 10px;
+  font-size: 14px;
+}
+/* line 173, app/styles/app.scss */
+.staff .infos > h3 {
+  margin: 0;
+}
+/* line 176, app/styles/app.scss */
+.staff .infos > p {
+  color: #828587;
+  height: 80px;
+}
+/* line 5, app/styles/detail.scss */
 .content .item-primary-info-background {
   position: absolute;
   width: 100%;
@@ -158,13 +203,13 @@ button.btn-border:hover, .btn.btn-border:hover {
   background-color: #f7fafa;
   border-bottom: 1px solid #d9d9de;
 }
-/* line 13, app/styles/detail.scss */
+/* line 14, app/styles/detail.scss */
 .content .item .primary-info {
   position: relative;
   padding: 60px 0 40px;
   border-bottom: 1px solid #d9d9de;
 }
-/* line 19, app/styles/detail.scss */
+/* line 20, app/styles/detail.scss */
 .content .item .primary-info .primary-image {
   /* border: 1px solid $border-color; */
   width: 600px;
@@ -173,19 +218,19 @@ button.btn-border:hover, .btn.btn-border:hover {
   background-position: 50% 50%;
   background-size: auto 100%;
 }
-/* line 29, app/styles/detail.scss */
+/* line 30, app/styles/detail.scss */
 .content .item .primary-info .tags {
   color: #828587;
   font-size: 14px;
   margin-top: 20px;
   font-weight: bold;
 }
-/* line 35, app/styles/detail.scss */
+/* line 36, app/styles/detail.scss */
 .content .item .primary-info .tags > li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 41, app/styles/detail.scss */
+/* line 42, app/styles/detail.scss */
 .content .item .primary-info > p {
   width: 600px;
   margin-bottom: 0;
@@ -193,50 +238,50 @@ button.btn-border:hover, .btn.btn-border:hover {
   font-size: 24px;
   line-height: 1.5em;
 }
-/* line 49, app/styles/detail.scss */
+/* line 50, app/styles/detail.scss */
 .content .item .primary-info .primary-right {
   width: 360px;
 }
-/* line 52, app/styles/detail.scss */
+/* line 53, app/styles/detail.scss */
 .content .item .primary-info .primary-right > h1 {
   margin: 0;
   font-size: 48px;
 }
-/* line 57, app/styles/detail.scss */
+/* line 58, app/styles/detail.scss */
 .content .item .primary-info .primary-right > ul {
   margin-top: 40px;
   height: 330px;
 }
-/* line 61, app/styles/detail.scss */
+/* line 62, app/styles/detail.scss */
 .content .item .primary-info .primary-right > ul > li {
   margin: 20px 0;
   font-size: 48px;
   font-weight: bold;
 }
-/* line 66, app/styles/detail.scss */
+/* line 67, app/styles/detail.scss */
 .content .item .primary-info .primary-right > ul > li > span {
   display: block;
   color: #828587;
   font-size: 16px;
   font-weight: normal;
 }
-/* line 75, app/styles/detail.scss */
+/* line 76, app/styles/detail.scss */
 .content .item .primary-info .primary-right .author {
   margin-top: 40px;
 }
-/* line 78, app/styles/detail.scss */
+/* line 79, app/styles/detail.scss */
 .content .item .primary-info .primary-right .author > h3 {
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 82, app/styles/detail.scss */
+/* line 83, app/styles/detail.scss */
 .content .item .primary-info .primary-right .author > span {
   display: block;
   color: #828587;
   font-size: 14px;
   margin: 5px 0;
 }
-/* line 88, app/styles/detail.scss */
+/* line 89, app/styles/detail.scss */
 .content .item .primary-info .primary-right .author > a {
   color: #00a0ff;
   display: inline-block;
@@ -244,27 +289,60 @@ button.btn-border:hover, .btn.btn-border:hover {
   margin-right: 60px;
   font-weight: bold;
 }
-/* line 95, app/styles/detail.scss */
+/* line 96, app/styles/detail.scss */
 .content .item .primary-info .primary-right .author > .author-avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-size: 100% 100%;
 }
-/* line 106, app/styles/detail.scss */
+/* line 107, app/styles/detail.scss */
 .content .detail {
-  height: 800px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  *zoom: 1;
 }
-/* line 110, app/styles/detail.scss */
+/* line 112, app/styles/detail.scss */
 .content .detail .tabs > li {
   cursor: pointer;
   display: inline-block;
   margin-right: 40px;
   padding: 30px 0;
 }
-/* line 116, app/styles/detail.scss */
+/* line 118, app/styles/detail.scss */
 .content .detail .tabs > li.selected {
   border-bottom: 4px solid #0a5ca9;
+}
+/* line 124, app/styles/detail.scss */
+.content .detail .recommended {
+  width: 360px;
+}
+/* line 127, app/styles/detail.scss */
+.content .detail .recommended > h2 {
+  margin: 0;
+}
+/* line 131, app/styles/detail.scss */
+.content .detail .recommended .staff {
+  width: 100%;
+  margin-top: 30px;
+}
+/* line 137, app/styles/detail.scss */
+.content .detail .tab-contents {
+  width: 600px;
+  margin-top: 40px;
+}
+/* line 142, app/styles/detail.scss */
+.content .detail .tab-contents .content h1 {
+  font-size: 24px;
+}
+/* line 145, app/styles/detail.scss */
+.content .detail .tab-contents .content p {
+  line-height: 1.5em;
+}
+/* line 148, app/styles/detail.scss */
+.content .detail .tab-contents .content img {
+  display: block;
+  width: 100%;
 }
 /* line 4, app/styles/index.scss */
 .header {
@@ -435,73 +513,33 @@ button.btn-border:hover, .btn.btn-border:hover {
 /* line 165, app/styles/index.scss */
 .content .picks-staff .staffs .staff {
   display: inline-block;
-  width: 416px;
   margin-left: 20px;
-  cursor: pointer;
 }
-/* line 171, app/styles/index.scss */
-.content .picks-staff .staffs .staff .image {
-  border-radius: 5px 5px 0 0;
-  height: 200px;
-  background-position: 50% 50%;
-  background-size: 100% auto;
-  position: relative;
-}
-/* line 178, app/styles/index.scss */
-.content .picks-staff .staffs .staff .image > .author {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0 5px 0 0;
-  padding: 3px 10px;
-  color: white;
-  font-size: 13px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-/* line 193, app/styles/index.scss */
-.content .picks-staff .staffs .staff .infos {
-  border-radius: 0 0 5px 5px;
-  border-left: 1px solid #d9d9de;
-  border-right: 1px solid #d9d9de;
-  border-bottom: 1px solid #d9d9de;
-  padding: 10px;
-  font-size: 14px;
-}
-/* line 203, app/styles/index.scss */
-.content .picks-staff .staffs .staff .infos > h3 {
-  margin: 0;
-}
-/* line 206, app/styles/index.scss */
-.content .picks-staff .staffs .staff .infos > p {
-  color: #828587;
-  height: 80px;
-}
-/* line 215, app/styles/index.scss */
+/* line 172, app/styles/index.scss */
 .content .create {
   padding: 60px 0;
 }
-/* line 218, app/styles/index.scss */
+/* line 175, app/styles/index.scss */
 .content .create > h1 {
   margin: 0;
   text-align: center;
   color: #828587;
 }
-/* line 224, app/styles/index.scss */
+/* line 181, app/styles/index.scss */
 .content .create .create-options {
   margin-top: 60px;
   text-align: center;
   color: #828587;
 }
-/* line 229, app/styles/index.scss */
+/* line 186, app/styles/index.scss */
 .content .create .create-options a.option {
   color: #828587;
 }
-/* line 232, app/styles/index.scss */
+/* line 189, app/styles/index.scss */
 .content .create .create-options a.option:hover {
   background-color: #f7fafa;
 }
-/* line 237, app/styles/index.scss */
+/* line 194, app/styles/index.scss */
 .content .create .create-options .option {
   display: inline-block;
   padding: 20px 50px;
@@ -509,21 +547,21 @@ button.btn-border:hover, .btn.btn-border:hover {
   font-size: 32px;
   vertical-align: middle;
 }
-/* line 244, app/styles/index.scss */
+/* line 201, app/styles/index.scss */
 .content .create .create-options .option > i {
   display: block;
   font-size: 96px;
   margin-bottom: 20px;
 }
-/* line 249, app/styles/index.scss */
+/* line 206, app/styles/index.scss */
 .content .create .create-options .option > i.fa-flask {
   color: #00a0ff;
 }
-/* line 252, app/styles/index.scss */
+/* line 209, app/styles/index.scss */
 .content .create .create-options .option > i.fa-gears {
   color: #0a5ca9;
 }
-/* line 257, app/styles/index.scss */
+/* line 214, app/styles/index.scss */
 .content .create .create-options .or {
   display: inline-block;
   position: relative;
@@ -531,7 +569,7 @@ button.btn-border:hover, .btn.btn-border:hover {
   font-size: 24px;
   vertical-align: middle;
 }
-/* line 264, app/styles/index.scss */
+/* line 221, app/styles/index.scss */
 .content .create .create-options .or::before, .content .create .create-options .or::after {
   position: absolute;
   display: block;
@@ -540,26 +578,26 @@ button.btn-border:hover, .btn.btn-border:hover {
   left: 50%;
   border-left: 1px solid #d9d9de;
 }
-/* line 272, app/styles/index.scss */
+/* line 229, app/styles/index.scss */
 .content .create .create-options .or::before {
   top: 30px;
 }
-/* line 275, app/styles/index.scss */
+/* line 232, app/styles/index.scss */
 .content .create .create-options .or::after {
   bottom: 30px;
 }
-/* line 279, app/styles/index.scss */
+/* line 236, app/styles/index.scss */
 .content .create .create-options .options {
   display: inline-block;
   width: 490px;
   text-align: left;
   vertical-align: middle;
 }
-/* line 285, app/styles/index.scss */
+/* line 242, app/styles/index.scss */
 .content .create .create-options .options > li {
   display: inline-block;
 }
-/* line 288, app/styles/index.scss */
+/* line 245, app/styles/index.scss */
 .content .create .create-options .options > li > a {
   text-align: center;
   color: #828587;
@@ -571,43 +609,43 @@ button.btn-border:hover, .btn.btn-border:hover {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 299, app/styles/index.scss */
+/* line 256, app/styles/index.scss */
 .content .create .create-options .options > li > a:hover {
   color: #0f2105;
 }
 
-/* line 309, app/styles/index.scss */
+/* line 266, app/styles/index.scss */
 .footer {
   padding: 60px 0;
   background-color: #03203a;
   color: white;
   font-size: 14px;
 }
-/* line 315, app/styles/index.scss */
+/* line 272, app/styles/index.scss */
 .footer .about {
   display: inline-block;
   margin-right: 80px;
 }
-/* line 319, app/styles/index.scss */
+/* line 276, app/styles/index.scss */
 .footer .about > h3 {
   margin: 0;
 }
-/* line 322, app/styles/index.scss */
+/* line 279, app/styles/index.scss */
 .footer .about > ul {
   margin-top: 20px;
 }
-/* line 325, app/styles/index.scss */
+/* line 282, app/styles/index.scss */
 .footer .about > ul > li {
   margin: 10px 0;
   color: #828587;
   cursor: pointer;
 }
-/* line 333, app/styles/index.scss */
+/* line 290, app/styles/index.scss */
 .footer .copyright {
   color: #828587;
   text-align: right;
 }
-/* line 337, app/styles/index.scss */
+/* line 294, app/styles/index.scss */
 .footer .copyright .logo {
   font-size: 24px;
 }
