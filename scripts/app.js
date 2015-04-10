@@ -58,8 +58,40 @@
 
   return this.require;
 }).call(this);this.require.define({"app":function(exports, require, module){(function() {
+  var importantThings, userProfile;
+
+  importantThings = function() {
+    if ($(".important-things").length === 0) {
+      return;
+    }
+    return setInterval(function() {
+      var $fadeInThing, $fadeOutThing, $things;
+      $things = $(".important-things .thing");
+      $fadeOutThing = $($things[1]);
+      $fadeInThing = $($things[0]);
+      $fadeOutThing.addClass("fade-out");
+      return setTimeout(function() {
+        $fadeInThing.insertAfter($fadeOutThing);
+        return $fadeOutThing.removeClass("fade-out");
+      }, 1200);
+    }, 5000);
+  };
+
+  userProfile = function() {
+    $(".js-open-profile").click(function() {
+      $(".user-profile").show();
+      return false;
+    });
+    return $(".js-close-profile").click(function() {
+      $(".user-profile").hide();
+      return false;
+    });
+  };
+
   module.exports = function() {
-    return console.info("log from app!");
+    console.info("log from app!");
+    importantThings();
+    return userProfile();
   };
 
 }).call(this);
