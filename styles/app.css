@@ -1,5 +1,5 @@
-/* line 1, /Users/anson/Develop/aixforce/in4-demo/app/images/icons.scss */
-.icon-logo {
+/* line 1, app/styles/icons.scss */
+.icon-app-icons-logo {
   width: 128px;
   height: 128px;
   background: url(/images/icons.png) 0px 0px no-repeat;
@@ -449,6 +449,12 @@ button.btn-border:hover, .btn.btn-border:hover {
 .content .detail .tab-contents .content img {
   display: block;
   width: 100%;
+}
+/* line 1, app/styles/icons.scss */
+.icon-app-icons-logo {
+  width: 128px;
+  height: 128px;
+  background: url(/images/icons.png) 0px 0px no-repeat;
 }
 /* line 4, app/styles/index.scss */
 .header {
